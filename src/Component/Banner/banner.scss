@@ -1,0 +1,58 @@
+.banner_main {
+    padding: 40px 0 90px 0;
+    position: relative;
+    &::after {
+        content: "";
+         position: absolute;
+        width: 297px;
+        height: 370px;
+         right: 0;
+         top: -77px;
+         z-index: -1;
+         background: url("../../Assets/Img/midil.png");
+         background-repeat: no-repeat;
+        }
+        &::before {
+        content: "";
+        position: absolute;
+       width: 122px;
+       height: 276px;
+        left: 0;
+        bottom:0;
+        background: url("../../Assets/Img/bottom.png");
+        background-repeat: no-repeat;
+       }
+       .text-bg {
+        text-align: center;
+        h1 {
+            color: #070605;
+            font-size: 48px;
+            line-height: 65px;
+            font-weight: bold;
+            padding-bottom:40px;
+       }
+       a {
+        font-size: 17px;
+        background-color: #1d1c1d;
+        color: #fff;
+        padding: 13px 0px;
+        width: 100%;
+        max-width: 190px;
+        text-align: center;
+        display: inline-block;
+        transition: ease-in all 0.5s;
+        &:hover{
+            background-color: #fe0131;
+            color: #fff;
+            transition: ease-in all 0.5s;
+            border-radius: 26px;
+        }
+   }
+   .text-img figure {
+    margin: 0px;
+    .text-img figure img {
+        width: 100%;
+   }
+}
+   }
+}
