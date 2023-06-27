@@ -1,0 +1,33 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 15px 0;
+
+    .navbar-brand {
+        img {
+            filter: invert(100%);
+        }
+    }
+
+    .navbar-toggler {
+        box-shadow: none;
+        background: transparent;
+        border: transparent;
+        padding: 5px;
+        filter: invert(1);
+        fill: #fff;
+    }
+
+    .offcanvas-body {
+        .navbar-nav {
+            gap: 15px;
+
+            a {
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+    }
+}
