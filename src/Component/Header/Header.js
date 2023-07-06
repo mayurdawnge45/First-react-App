@@ -11,6 +11,7 @@ import logo from "../../Assets/images/logo.png";
 import location from "../../Assets/images/location.png";
 import call from "../../Assets/images/call.png";
 import envelope from "../../Assets/images/envelope.png";
+import "../../Assets/stylesheet/responsive.css";
 // import envelope from "../../Assets/images/envelope.png";
 import "./Header.css";
 
@@ -28,22 +29,22 @@ const Header = () => {
             <div class="contact_nav" id="">
               <ul class="nav-item-box">
                 <li class="nav-item">
-                  <a class="nav-link-item" href="service.html">
+                  <Link class="nav-link-item" href="service.html">
                     <img src={location} alt="" />
                     <span>Location</span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link-item" href="service.html">
+                  <Link class="nav-link-item" href="service.html">
                     <img src={call} alt="" />
                     <span>Call : + 01 1234567890</span>
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link-item" href="service.html">
+                  <Link class="nav-link-item" to="service.html">
                     <img src={envelope} alt="" />
                     <span>demo@gmail.com</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -52,7 +53,7 @@ const Header = () => {
 
         {["md"].map((expand) => (
           <Navbar key={expand} expand={expand} className="">
-            <Container>
+            <Container className="main-menu-header">
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
               />
@@ -66,8 +67,8 @@ const Header = () => {
                     Offcanvas
                   </Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Offcanvas.Body className="">
+                  <Nav className="main_menu_body flex-grow-1 pe-3">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
                     <Link to="/service">Service</Link>

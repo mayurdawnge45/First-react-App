@@ -32,6 +32,18 @@
 
 @media (max-width: 768px) {
 
+    .contact_nav {
+        display: none;
+    }
+
+    .top-bar.container {
+        justify-content: center;
+    }
+
+    button.navbar-toggler.collapsed {
+        box-shadow: none;
+        border:0;
+    }
 
     .slider_section .detail-box {
         text-align: center;

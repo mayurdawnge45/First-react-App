@@ -5,8 +5,6 @@ import About from "./Component/Pages/About";
 import Service from "./Component/Pages/Service";
 import Contact from "./Component/Pages/Contact";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function App() {
   return (
     <div className="App">
